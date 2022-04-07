@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MySql.Data.EntityFrameworkCore" />
+    <None Remove="Data\" />
+    <None Remove="Devart.Data.Oracle.EFCore" />
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="MySql.Data" />
+    <None Remove="Google.Apis.Calendar.v3" />
+    <None Remove="Google.Apis.Sheets.v4" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+    <PackageReference Include="Devart.Data.Oracle.EFCore" Version="9.16.1434" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.28" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.57.0.2590" />
+    <PackageReference Include="Google.Apis.Sheets.v4" Version="1.57.0.2637" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+</Project>
