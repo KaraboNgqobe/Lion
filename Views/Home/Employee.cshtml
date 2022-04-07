@@ -1,0 +1,59 @@
+﻿@model POC_Leave.Models.Employee
+@{
+    ViewData["Title"] = "Create A Leave Entry";
+}
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<h1>@ViewData["Title"]</h1>
+
+<p style="">Please Enter Leave Criteria in the page below:</p>
+
+@using (Html.BeginForm("Add", "Home", FormMethod.Post))
+{
+    <form>
+        <div id="demo" style=" width: 1200px; border: 15px solid green; padding: 20px; margin: 20px; ">
+            <label for="fName">Enter your first name:</label><input type="text" id="FirstName" name="FirstName" />
+            <br />
+            <label for="lName">Enter your last name:</label><input type="text" id="LastName" name="LastName" />
+            <br />
+            <label for="startDate">Enter your start date:</label><input type="datetime-local" id="StartDate" name="StartDate" />
+            <br />
+            <label for="endDate">Enter your end date:</label><input type="datetime-local" id="EndDate" name="EndDate" />
+            <br />
+            <label for="leaveType">Please select leave type:</label>
+            <select id="leaveType" name="LeaveType">
+                <option value="sick">Sick</option>
+                <option value="annual">Annual Leave</option>
+                <option value="maternity">Maternity</option>
+                <option value="family">Family Responsibility</option>
+            </select>
+            <br />
+            <label for="leaveReason">Please enter reason for leave:</label>
+            <textarea id="LeaveReason" name="LeaveReason" rows="2" cols="40">Enter Reason for Leave:</textarea>
+            <br />
+            <label for="leaveDays">Enter amount of leave days:</label><input type="number" id="LeaveDays" name="LeaveDays" />
+            <br />
+            <button type="submit" id="submit" name="submit">Submit Leave Request</button>
+            <br />
+
+        </div>
+
+    </form>
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
